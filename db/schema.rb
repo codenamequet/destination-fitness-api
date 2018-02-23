@@ -24,12 +24,7 @@ ActiveRecord::Schema.define(version: 20180222223549) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "exercise"
-    t.string "distance"
-    t.string "duration"
-    t.string "calories"
-    t.bigint "destination_id"
-    t.index ["destination_id"], name: "index_users_on_destination_id"
+    t.string "destination"
   end
 
 end
