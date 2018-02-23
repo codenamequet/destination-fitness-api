@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :distance
       t.string :duration
       t.string :calories
+      t.references :destination
     end
   end
 end
